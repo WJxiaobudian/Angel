@@ -1,0 +1,25 @@
+<view class='contanier'>
+  
+  <!---- 用户头像、 用户名---->
+  <view class='userInfo'>
+    <image wx:if="{{userInfo && userInfo.avatarUrl}}" class='userinof-avator' src='{{userInfo.avatarUrl}}' background-size='cover'></image>
+    <text class='userinfo-nickname'>{{userInfo.nickName}}</text>
+  </view>
+  <!----- 可用余额、 剩余积分--->
+  <view class='asset'>
+    <view class='item' bindtap='geAsset'>
+      <view>{{balance}}</view>
+      <view>可用余额</view>
+    </view>
+    <view class='item right' bindtap='goScore'>
+      <view>{{score}}</view>
+      <view>剩余积分</view>
+    </view>
+  </view>
+  <!---- 中间间隔线------>
+  <view class='lineView'></view>
+  <view class='my-item'>
+    <navigator url='/pages/order-list/index'></navigator>
+  
+  </view>
+</view>
