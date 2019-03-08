@@ -68,5 +68,33 @@ module.exports = {
   /// 启动页展示图
   banners:(data) => {
     return request('/banner/list',true,'get',data)
-  }
+  },
+  queryConfig:(data) => {
+    return request('/config/get-value', true, 'get', data)
+  },
+  scoreRules:(data) => {
+    return request('/score/send/rule', true, 'post', data)
+  },
+  kanjiaList:(data) => {
+    return request('/shop/goods/kanjia/list', true, 'post', data)
+  },
+  bindMobile:(data) => {
+    return request('/user/wxapp/bindMobile', true, 'post',data)
+  },
+  userDetail: (token) => {
+    return request('/user/detail', true, 'get', {
+      token
+    })
+  },
+  userAmount: (token) => {
+    return request('/user/amount', true, 'get', {
+      token
+    })
+  },
+  login: (code) => {
+    return request('/user/wxapp/login', true, 'post', {
+      code,
+      type: 2
+    })
+  },
 }

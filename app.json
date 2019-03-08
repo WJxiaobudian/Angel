@@ -5,7 +5,14 @@
     "pages/category/category",      
     "pages/shop-cart/index",        
     "pages/my/index",              
-    "pages/order-list/index"       
+    "pages/order-list/index",
+    "pages/asset/index",
+    "pages/score/index",
+    "pages/sign/index",
+    "pages/score-excharge/index",
+    "pages/select-address/index",
+    "pages/mycoupons/index",
+    "pages/authorize/index"
   ],
   "window":{
     "backgroundTextStyle":"light",
